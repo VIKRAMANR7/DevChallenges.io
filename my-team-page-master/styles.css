@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+}
+.container {
+  margin: 50px 250px 0 250px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.content div {
+  width: 50%;
+}
+
+h1 {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+.content div:nth-child(2) p:nth-child(1),
+.content div:nth-child(2) p:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.content div:nth-child(2) p:nth-child(2) {
+  font-weight: 400;
+  margin-right: 100px;
+}
+.rows {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.column:nth-child(3n + 2) {
+  margin-top: 90px;
+}
+.column {
+  width: 250px;
+  height: 350px;
+}
+.column img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+.column h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+}
+.column p {
+  font-family: "PT Serif", sans-serif;
+  font-size: 12px;
+}
+
+.vertical {
+  transform: rotate(90deg);
+  display: block;
+  position: relative;
+  top: -215px;
+  right: -90px;
+}
+
+footer {
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9a9a9;
+}
+@media screen and (max-width: 375px) {
+  body {
+    overflow: hidden;
+  }
+  .container {
+    margin: 70px 15px 100px 15px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .content div {
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: 40px;
+  }
+  .content div:nth-child(2) p:nth-child(2) {
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 0;
+  }
+  .column {
+    width: 160px;
+    height: 200px;
+    /* border: 1px solid black; */
+  }
+  .column img {
+    width: 140px;
+    height: 175px;
+  }
+  .rows {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .column:nth-child(3n + 2) {
+    margin-top: 0;
+  }
+  .column:nth-child(2n) {
+    margin-top: 50px;
+  }
+  .column h2 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .column p {
+    font-size: 10px;
+  }
+  .vertical {
+    top: -130px;
+    right: -70px;
+  }
+}
